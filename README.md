@@ -1,28 +1,26 @@
-# Anbalayam – Static Website
+# Anbalayam – Multi-page Static Website
+
+A responsive bilingual (English/Tamil) static website for Anbalayam, Avudayarkoil, Pudukkottai District.
 
 ## Pages
-- index.html – Home with 5-image hero slideshow
-- about.html – About Anbalayam
-- gallery.html – Photo gallery
-- videos.html – YouTube videos
-- donate.html – Donation placeholder
-- contact.html – Full address and Google Maps
-- style.css / script.js – Shared styling and language/slideshow behavior
+- `index.html` – Home with 5-image automatic hero slideshow
+- `about.html` – About and values
+- `gallery.html` – Gallery
+- `videos.html` – 6 supplied YouTube videos
+- `donate.html` – Donation placeholder
+- `contact.html` – Full address and Google Maps link
 
-## Images to replace
-Hero slideshow:
-- assets/1.jpg
-- assets/2.jpg
-- assets/3.jpg
-- assets/4.jpg
-- assets/5.jpg
+## Images
+Replace these files without changing the HTML:
+- `assets/1.jpg` through `assets/5.jpg` – Home hero slideshow
+- `assets/gallery1.jpg` through `assets/gallery6.jpg` – Gallery
+- `assets/logo.jpg` – Anbalayam logo
 
-Gallery:
-- assets/gallery1.jpg through assets/gallery6.jpg
+## Donation
+Edit `donate.html` to add UPI ID, QR image, bank details, or a payment gateway link.
 
-Keep the filenames the same when replacing them.
+## Language
+English is the default. The Tamil/English switch is remembered using browser localStorage.
 
-English is default. The Tamil/English switch is shared across pages and remembered in the browser.
-
-No backend is required.
-"# anbalayam-website" 
+## Hosting
+No server or database is required. The folder can be hosted on GitHub Pages, Netlify, S3 static hosting, or any normal web server.
