@@ -1,26 +1,35 @@
-# Anbalayam – Multi-page Static Website
+# Anbalayam – Final Static Website
 
-A responsive bilingual (English/Tamil) static website for Anbalayam, Avudayarkoil, Pudukkottai District.
+This version uses the real photos supplied in `images.zip` and the Anbalayam logo supplied in the conversation.
 
 ## Pages
-- `index.html` – Home with 5-image automatic hero slideshow
-- `about.html` – About and values
-- `gallery.html` – Gallery
-- `videos.html` – 6 supplied YouTube videos
-- `donate.html` – Donation placeholder
-- `contact.html` – Full address and Google Maps link
+- index.html – Home with 5-photo slideshow
+- about.html – About
+- gallery.html – Gallery using all supplied images
+- videos.html – Six YouTube videos
+- donate.html – Donation section with supplied QR image
+- contact.html – Address and Google Maps link
 
-## Images
-Replace these files without changing the HTML:
-- `assets/1.jpg` through `assets/5.jpg` – Home hero slideshow
-- `assets/gallery1.jpg` through `assets/gallery6.jpg` – Gallery
-- `assets/logo.jpg` – Anbalayam logo
+## Replace hero photos
+Replace:
+`assets/1.jpg` through `assets/5.jpg`
+
+The slideshow will automatically use the replacement files.
+
+## Replace gallery photos
+The gallery files are named descriptively in `assets/`.
 
 ## Donation
-Edit `donate.html` to add UPI ID, QR image, bank details, or a payment gateway link.
+The supplied QR image is included on `donate.html`. Verify that the QR/payment destination is correct before going live. Add any verified UPI ID, bank details, phone/WhatsApp number, or payment link as required.
 
-## Language
-English is the default. The Tamil/English switch is remembered using browser localStorage.
+## Address
+10/154 A, Punniam Vayal,
+Kulathukudiyiruppu Road,
+Avudayarkoil (Post),
+Pudukkottai District, Tamil Nadu.
+
+Google Maps:
+https://maps.app.goo.gl/n7pS8PvoaZk9ZAjm8
 
 ## Hosting
-No server or database is required. The folder can be hosted on GitHub Pages, Netlify, S3 static hosting, or any normal web server.
+No backend is required. The site can be hosted on GitHub Pages, Netlify, Cloudflare Pages, S3 static hosting, or any normal web server.
