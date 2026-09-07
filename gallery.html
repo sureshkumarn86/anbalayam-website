@@ -1,8 +1,105 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gallery | Anbalayam</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
-<body><header class="site-header"><nav class="nav container"><a class="brand" href="index.html"><img src="assets/logo.jpg" alt="Anbalayam logo"></a><div class="nav-links"><a href="index.html" data-en="Home" data-ta="முகப்பு">Home</a><a href="about.html" data-en="About" data-ta="எங்களைப் பற்றி">About</a><a class="active" href="gallery.html" data-en="Gallery" data-ta="படங்கள்">Gallery</a><a href="videos.html" data-en="Videos" data-ta="வீடியோக்கள்">Videos</a><a href="contact.html" data-en="Contact" data-ta="தொடர்பு">Contact</a><a class="donate-mini" href="donate.html" data-en="Donate" data-ta="நன்கொடை">Donate</a></div><button id="languageToggle" class="language-toggle">தமிழ்</button><button class="menu-toggle">☰</button></nav></header>
-<main><section class="section"><div class="container"><p class="section-label" data-en="Our Home" data-ta="எங்கள் இல்லம்">Our Home</p><h2 data-en="Moments from Anbalayam" data-ta="அன்பாலயத்தின் தருணங்கள்">Moments from Anbalayam</h2><p style="max-width:700px;color:#6b7168" data-en="A glimpse of the people, everyday life and community at Anbalayam." data-ta="அன்பாலயத்தில் வாழும் மக்களையும் அன்றாட வாழ்க்கையையும் சமூக உணர்வையும் காட்டும் சில தருணங்கள்.">A glimpse of the people, everyday life and community at Anbalayam.</p>
-<div class="gallery-final-grid">
-    <img src="assets/gallery-home-2s.jpg"><img src="assets/gallery-food.jpg"><img src="assets/gallery-group-1.jpg"><img src="assets/gallery-group-3.jpg"><img src="assets/gallery-group-4.jpg"><img src="assets/gallery-office.jpg"><img src="assets/gallery-care-1.jpg"><img src="assets/gallery-care-2.jpg"><img src="assets/gallery-group-5.jpg"><img src="assets/gallery-home-3.jpg">
-</div></div></section></main>
-<footer><div class="container footer-inner"><div><img src="assets/logo.jpg" alt="Anbalayam"></div><div><p data-en="A home of care, dignity and love." data-ta="அன்பும் மரியாதையும் நிறைந்த இல்லம்.">A home of care, dignity and love.</p></div></div></footer><script src="script.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Anbalayam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="Anbalayam logo"></a>
+      <div class="nav-links">
+        <a href="index.html" data-en="Home" data-ta="முகப்பு">Home</a>
+        <a href="about.html" data-en="About" data-ta="எங்களைப் பற்றி">About</a>
+        <a class="active" href="gallery.html" data-en="Gallery" data-ta="படங்கள்">Gallery</a>
+        <a href="videos.html" data-en="Videos" data-ta="வீடியோக்கள்">Videos</a>
+        <a href="contact.html" data-en="Contact" data-ta="தொடர்பு">Contact</a>
+        <a class="donate-mini" href="donate.html" data-en="Donate" data-ta="நன்கொடை">Donate</a>
+      </div>
+      <button id="languageToggle" class="language-toggle">தமிழ்</button>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="section-label" data-en="Our Home" data-ta="எங்கள் இல்லம்">Our Home</p>
+        <h2 data-en="Moments from Anbalayam" data-ta="அன்பாலயத்தின் தருணங்கள்">Moments from Anbalayam</h2>
+        <p class="gallery-intro" data-en="A glimpse of the people, everyday life and community at Anbalayam." data-ta="அன்பாலயத்தில் வாழும் மக்களையும் அன்றாட வாழ்க்கையையும் சமூக உணர்வையும் காட்டும் சில தருணங்கள்.">
+          A glimpse of the people, everyday life and community at Anbalayam.
+        </p>
+
+        <div class="gallery-final-grid" id="galleryGrid">
+          <button class="gallery-item" type="button" data-full-src="assets/gallery-home-2s.jpg" data-caption-en="Residents sharing smiles" data-caption-ta="சிரிப்புகளை பகிரும் குடியிருப்போர்">
+            <img src="assets/gallery-home-2s.jpg" alt="Residents sharing smiles">
+            <span data-en="Full View" data-ta="முழு பார்வை">Full View</span>
+          </button>
+          <button class="gallery-item" type="button" data-full-src="assets/gallery-food.jpg" data-caption-en="Community meal at Anbalayam" data-caption-ta="அன்பாலயத்தில் சமூக உணவு">
+            <img src="assets/gallery-food.jpg" alt="Community meal at Anbalayam">
+            <span data-en="Full View" data-ta="முழு பார்வை">Full View</span>
+          </button>
+          <button class="gallery-item" type="button" data-full-src="assets/gallery-group-1.jpg" data-caption-en="Group moments" data-caption-ta="குழுவின் தருணங்கள்">
+            <img src="assets/gallery-group-1.jpg" alt="Group moments">
+            <span data-en="Full View" data-ta="முழு பார்வை">Full View</span>
+          </button>
+          <button class="gallery-item" type="button" data-full-src="assets/gallery-group-3.jpg" data-caption-en="Residents together" data-caption-ta="ஒன்றாக இருக்கும் குடியிருப்போர்">
+            <img src="assets/gallery-group-3.jpg" alt="Residents together">
+            <span data-en="Full View" data-ta="முழு பார்வை">Full View</span>
+          </button>
+          <button class="gallery-item" type="button" data-full-src="assets/gallery-group-4.jpg" data-caption-en="Community gathering" data-caption-ta="சமூக கூடுகை">
+            <img src="assets/gallery-group-4.jpg" alt="Community gathering">
+            <span data-en="Full View" data-ta="முழு பார்வை">Full View</span>
+          </button>
+          <button class="gallery-item" type="button" data-full-src="assets/gallery-office.jpg" data-caption-en="Daily coordination" data-caption-ta="தினசரி ஒருங்கிணைப்பு">
+            <img src="assets/gallery-office.jpg" alt="Daily coordination">
+            <span data-en="Full View" data-ta="முழு பார்வை">Full View</span>
+          </button>
+          <button class="gallery-item" type="button" data-full-src="assets/gallery-care-1.jpg" data-caption-en="Care and support" data-caption-ta="பராமரிப்பும் ஆதரவும்">
+            <img src="assets/gallery-care-1.jpg" alt="Care and support">
+            <span data-en="Full View" data-ta="முழு பார்வை">Full View</span>
+          </button>
+          <button class="gallery-item" type="button" data-full-src="assets/gallery-care-2.jpg" data-caption-en="Compassionate service" data-caption-ta="அன்பான சேவை">
+            <img src="assets/gallery-care-2.jpg" alt="Compassionate service">
+            <span data-en="Full View" data-ta="முழு பார்வை">Full View</span>
+          </button>
+          <button class="gallery-item" type="button" data-full-src="assets/gallery-group-5.jpg" data-caption-en="Celebrating together" data-caption-ta="ஒன்றாகக் கொண்டாடுதல்">
+            <img src="assets/gallery-group-5.jpg" alt="Celebrating together">
+            <span data-en="Full View" data-ta="முழு பார்வை">Full View</span>
+          </button>
+          <button class="gallery-item" type="button" data-full-src="assets/gallery-home-3.jpg" data-caption-en="Warm moments at home" data-caption-ta="இல்லத்தின் இனிய தருணங்கள்">
+            <img src="assets/gallery-home-3.jpg" alt="Warm moments at home">
+            <span data-en="Full View" data-ta="முழு பார்வை">Full View</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="galleryLightbox" class="gallery-lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+    <button type="button" class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImage" src="" alt="Gallery full view">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button type="button" class="lightbox-nav next" id="lightboxNext" aria-label="Next image">›</button>
+  </div>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><img src="assets/logo.jpg" alt="Anbalayam"></div>
+      <div>
+        <p data-en="A home of care, dignity and love." data-ta="அன்பும் மரியாதையும் நிறைந்த இல்லம்.">A home of care, dignity and love.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
